@@ -77,7 +77,10 @@ function handleResultValidation() {
     return;
   }
 
-  if (!board.includes("")) getGameResult(TIE);
+  if (!board.includes("")) {
+    getGameResult(TIE);
+    isGameActive = false;
+  }
 }
 
 //update board
